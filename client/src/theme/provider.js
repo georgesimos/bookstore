@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { ThemeProvider as MuiThemeProvider } from '@material-ui/styles';
 import createTheme from './theme';
-import ThemeContext from './ThemeContext';
+import ThemeContext from './context';
 
 export default function ThemeProvider(props) {
   const { children } = props;
