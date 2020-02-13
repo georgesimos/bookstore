@@ -5,13 +5,13 @@ import { Router } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import store from './redux';
 
-import ThemeProvider from './theme';
+import ThemeProvider from './theme'; // This could be on REDUX
 import history from './history';
 import Routes from './routes';
 import { ThemeContext } from 'theme';
 
 function App() {
-  const [theme, setTheme] = useState('rally');
+  const [theme, setTheme] = useState('reply');
 
   return (
     <Provider store={store}>

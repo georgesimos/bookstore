@@ -5,6 +5,7 @@ import { Typography, Hidden } from '@material-ui/core';
 import { BurgeButton, MobileNavBar } from 'components';
 import pages from './pages';
 import useStyles from './styles';
+import ThemeToggler from 'components/ThemeToggler/ThemeToggler';
 
 export default function NavBar() {
   const classes = useStyles();
@@ -41,6 +42,7 @@ export default function NavBar() {
             ))}
           </div>
         </Hidden>
+        <ThemeToggler />
         <div className={classes.navMobile}>
           <BurgeButton onClick={() => setShowMenu(!showMenu)} />
         </div>
