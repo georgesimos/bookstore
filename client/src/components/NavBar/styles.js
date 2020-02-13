@@ -64,5 +64,10 @@ export default makeStyles(theme => ({
       height: 9
     }
   },
-  navMobile: { marginLeft: 'auto', marginRight: theme.spacing(1) }
+  themeToggler: {
+    marginLeft: 'auto',
+    marginRight: theme.spacing(1),
+    marginBottom: theme.spacing(1)
+  },
+  navMobile: { margin: theme.spacing(0, 1) }
 }));

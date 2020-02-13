@@ -42,7 +42,7 @@ export default function NavBar() {
             ))}
           </div>
         </Hidden>
-        <ThemeToggler />
+        <ThemeToggler className={classes.themeToggler} />
         <div className={classes.navMobile}>
           <BurgeButton onClick={() => setShowMenu(!showMenu)} />
         </div>
