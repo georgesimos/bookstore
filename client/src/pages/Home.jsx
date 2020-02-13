@@ -5,8 +5,8 @@ import { getBooks } from '../redux/actions';
 
 function Home({ books, getBooks }) {
   useEffect(() => {
-    getBooks();
-  }, [getBooks]);
+    !books.length && getBooks();
+  }, [books, getBooks]);
   return (
     <>
       <Typography variant="h1" align="center">
