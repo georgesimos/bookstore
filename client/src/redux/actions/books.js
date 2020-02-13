@@ -1,8 +1,9 @@
 import { GET_BOOKS } from '../types';
+import { setAlert } from './alert';
 
 export const getBooks = () => async dispatch => {
   try {
-    const url = '/books';
+    const url = '/api/books';
     const response = await fetch(url, {
       method: 'GET',
       headers: { 'Content-Type': 'application/json' }
@@ -18,7 +19,7 @@ export const getBooks = () => async dispatch => {
 
 export const addBook = book => async dispatch => {
   try {
-    const url = '/books';
+    const url = '/api/books';
     const response = await fetch(url, {
       method: 'POST',
       headers: {
@@ -37,7 +38,7 @@ export const addBook = book => async dispatch => {
 
 export const editBook = (id, book) => async dispatch => {
   try {
-    const url = '/books/' + id;
+    const url = '/api/books/' + id;
     const response = await fetch(url, {
       method: 'PUT',
       headers: {
@@ -56,7 +57,7 @@ export const editBook = (id, book) => async dispatch => {
 
 export const deleteBook = id => async dispatch => {
   try {
-    const url = '/books/' + id;
+    const url = '/api/books/' + id;
     const response = await fetch(url, {
       method: 'DELETE',
       headers: {
